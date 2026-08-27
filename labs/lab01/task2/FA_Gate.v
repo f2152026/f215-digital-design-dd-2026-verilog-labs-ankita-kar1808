@@ -28,8 +28,8 @@ module FA_Gate(
 
   xor #(2,3) (ps,  a,   b);
   and #(3,4) (pc1, a,   b);
-  xor #(4,2) (sum, cin, ps);
-  and #(4,5) (pc2, cin, ps);
+  xor #(4,5) (sum, cin, ps);
+  and #(4,3) (pc2, cin, ps);
   or  #(3,4) (cout, pc1, pc2);
 
 endmodule
